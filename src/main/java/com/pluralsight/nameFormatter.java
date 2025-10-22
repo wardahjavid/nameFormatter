@@ -13,6 +13,16 @@ public class nameFormatter {
         if (suffix != null && !suffix.isEmpty()) {
             result += ", " + suffix;
         }
+        result += firstName;
+
+        if (middleName != null && !middleName.isEmpty()) {
+            result += " " + middleName;
+        }
+
+        if (suffix != null && !suffix.isEmpty()) {
+            result += ", " + suffix;
+        }
+
         return result;
     }
 
